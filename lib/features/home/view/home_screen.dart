@@ -31,6 +31,12 @@ class HomeScreen extends StatelessWidget {
             onTap: () => Navigator.of(context).pushNamed(RoutePath.video,
                 arguments: const VideoPlayerScreenArgs(
                     videoUrl: AppEndpoints.videoUrl3)),
+          ),
+          ListTile(
+            title: const Text('Video-4'),
+            onTap: () => Navigator.of(context).pushNamed(RoutePath.video,
+                arguments: const VideoPlayerScreenArgs(
+                    videoUrl: AppEndpoints.videoUrl4)),
           )
         ],
       ),
