@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:video_streaming/core/constants/app_endpoints.dart';
 import 'package:video_streaming/core/routes/route_path.dart';
 import 'package:video_streaming/features/video_player/view/video_player_screen.dart';
+
+import '../../../core/constants/app_endpoints.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,18 +27,6 @@ class HomeScreen extends StatelessWidget {
                 arguments: const VideoPlayerScreenArgs(
                     videoUrl: AppEndpoints.videoUrl2)),
           ),
-          ListTile(
-            title: const Text('Video-3'),
-            onTap: () => Navigator.of(context).pushNamed(RoutePath.video,
-                arguments: const VideoPlayerScreenArgs(
-                    videoUrl: AppEndpoints.videoUrl3)),
-          ),
-          ListTile(
-            title: const Text('Video-4'),
-            onTap: () => Navigator.of(context).pushNamed(RoutePath.video,
-                arguments: const VideoPlayerScreenArgs(
-                    videoUrl: AppEndpoints.videoUrl4)),
-          )
         ],
       ),
     );

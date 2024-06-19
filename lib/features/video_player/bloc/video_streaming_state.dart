@@ -15,8 +15,11 @@ final class VideoStreamingLoading extends VideoStreamingState {
 }
 
 final class VideoStreamingLoaded extends VideoStreamingState {
-  const VideoStreamingLoaded({required this.vlcPlayerController});
-  final VlcPlayerController vlcPlayerController;
+  const VideoStreamingLoaded(
+      {required this.player, required this.videoController});
+
+  final Player player;
+  final VideoController videoController;
   @override
-  List<Object> get props => [vlcPlayerController];
+  List<Object> get props => [player, videoController];
 }

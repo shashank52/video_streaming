@@ -20,6 +20,7 @@ class AppRoutes {
             args: settings.arguments as VideoPlayerScreenArgs,
           ),
         );
+
       default:
         return MaterialPageRoute(
           settings: settings,
